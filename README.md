@@ -4,7 +4,6 @@
 [![Latest version](https://img.shields.io/crates/v/adlx-lite.svg?logo=rust)](https://crates.io/crates/adlx-lite)
 [![Documentation](https://docs.rs/adlx-lite/badge.svg)](https://docs.rs/adlx-lite)
 [![MSRV](https://img.shields.io/badge/rustc-1.88.0+-ab6000.svg)](https://blog.rust-lang.org/2025/06/26/Rust-1.88.0/)
-[![Lines of code](https://tokei.rs/b1/github/yihuishou/adlx-rs-lite)](https://github.com/yihuishou/adlx-rs-lite)
 ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4%20adopted-ff69b4.svg)](./CODE_OF_CONDUCT.md)
 
