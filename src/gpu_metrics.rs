@@ -152,7 +152,7 @@ pub struct GpuMetricsList(List);
 unsafe impl Interface for GpuMetricsList {
     type Impl = ffi::IADLXGPUMetricsList;
     type Vtable = ffi::IADLXGPUMetricsListVtbl;
-    const IID: &'static str = "IADLXGpuMetricsList";
+    const IID: &'static str = "IADLXGPUMetricsList";
 }
 
 impl GpuMetricsList {
@@ -198,7 +198,7 @@ pub struct GpuMetricsSupport(InterfaceImpl);
 unsafe impl Interface for GpuMetricsSupport {
     type Impl = ffi::IADLXGPUMetricsSupport;
     type Vtable = ffi::IADLXGPUMetricsSupportVtbl;
-    const IID: &'static str = "IADLXGpuMetricsSupport";
+    const IID: &'static str = "IADLXGPUMetricsSupport";
 }
 
 impl GpuMetricsSupport {
@@ -437,7 +437,7 @@ impl GpuMetricsSupport {
         })
     }
     #[doc(alias = "GetGPUVRAMRange")]
-    pub fn gpu_vran_range(&self) -> Result<std::ops::RangeInclusive<i32>> {
+    pub fn gpu_vram_range(&self) -> Result<std::ops::RangeInclusive<i32>> {
         let mut min = MaybeUninit::uninit();
         let mut max = MaybeUninit::uninit();
         let res = unsafe {
