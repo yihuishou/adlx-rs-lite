@@ -1,0 +1,9 @@
+[package]
+name = "api_gen"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# Version-locked to not make the CI go out of date
+bindgen = "=0.72.0"
