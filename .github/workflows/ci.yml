@@ -27,7 +27,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@nightly
       - name: Generate minimal-version dependencies
         run: cargo -Zminimal-versions generate-lockfile
-      - uses: dtolnay/rust-toolchain@1.88.0
+      - uses: dtolnay/rust-toolchain@1.120.0
       - name: Cargo check
         run: cargo check --exclude api_gen --workspace --all-targets
 
