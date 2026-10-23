@@ -48,9 +48,9 @@ unsafe extern "C" fn on_gpu_stress_test_finished(
 /// # 例子
 ///
 /// ```no_run
-/// use adlx::{Gpu3, GpuStressTestFinishedListener};
+/// use adlx_lite::{Gpu3, GpuStressTestFinishedListener};
 ///
-/// # fn run(gpu3: &Gpu3) -> adlx::Result<()> {
+/// # fn run(gpu3: &Gpu3) -> adlx_lite::Result<()> {
 /// let mut listener = GpuStressTestFinishedListener::new(|success| {
 ///     println!("压力测试结束，成功: {success}");
 ///     true

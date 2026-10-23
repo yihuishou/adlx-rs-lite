@@ -3,9 +3,9 @@
 //! 对每个可达对象（System / GPU / Metrics / Display ...）逐一尝试 QueryInterface，
 //! 从而确定「谁支持哪些接口」——这正是 1.5 新增接口能否被项目用上的关键。
 
-use adlx::ffi;
-use adlx::helper::AdlxHelper;
-use adlx::interface::{Interface, InterfaceImpl};
+use adlx_lite::ffi;
+use adlx_lite::helper::AdlxHelper;
+use adlx_lite::interface::{Interface, InterfaceImpl};
 
 /// 扫描一个父对象，把它支持的 IID 收集起来
 macro_rules! scan {

@@ -1,6 +1,6 @@
 //! ADLX 可读取信息的全量探测示例（只读，不做任何修改）
 
-use adlx::{
+use adlx_lite::{
     gpu::{Gpu, Gpu1, Gpu2},
     helper::AdlxHelper,
     interface::Interface,

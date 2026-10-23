@@ -1,10 +1,10 @@
 # ADLX
 
-[![Actions Status](https://github.com/Traverse-Research/adlx-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/Traverse-Research/adlx-rs/actions)
-[![Latest version](https://img.shields.io/crates/v/adlx.svg?logo=rust)](https://crates.io/crates/adlx)
-[![Documentation](https://docs.rs/adlx/badge.svg)](https://docs.rs/adlx)
+[![Actions Status](https://github.com/yihuishou/adlx-rs-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/yihuishou/adlx-rs-lite/actions)
+[![Latest version](https://img.shields.io/crates/v/adlx-lite.svg?logo=rust)](https://crates.io/crates/adlx-lite)
+[![Documentation](https://docs.rs/adlx-lite/badge.svg)](https://docs.rs/adlx-lite)
 [![MSRV](https://img.shields.io/badge/rustc-1.88.0+-ab6000.svg)](https://blog.rust-lang.org/2025/06/26/Rust-1.88.0/)
-[![Lines of code](https://tokei.rs/b1/github/Traverse-Research/adlx-rs)](https://github.com/Traverse-Research/adlx-rs)
+[![Lines of code](https://tokei.rs/b1/github/yihuishou/adlx-rs-lite)](https://github.com/yihuishou/adlx-rs-lite)
 ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4%20adopted-ff69b4.svg)](./CODE_OF_CONDUCT.md)
 
@@ -18,7 +18,7 @@ Add this to your Cargo.toml:
 
 ```toml
 [dependencies]
-adlx = "1.0.0"
+adlx-lite = "1.0.0"
 ```
 
 ## ADLX version support
@@ -37,7 +37,7 @@ Interfaces introduced in ADLX 1.5 are version-gated: on an older driver they ret
 | `IADLXGPUMetrics3` / `IADLXGPUMetricsSupport3` (fan duty) | ADLX 1.5 |
 | `IADLXVariableGraphicsMemory` | ADLX 1.5 |
 
-The runtime version is available via `adlx::runtime_version()`.
+The runtime version is available via `adlx_lite::runtime_version()`.
 
 ## Wrapped API
 
@@ -88,7 +88,7 @@ Metrics must be checked before they are read — not every metric is supported o
 GPU/driver combination:
 
 ```rust,no_run
-use adlx::helper::AdlxHelper;
+use adlx_lite::helper::AdlxHelper;
 
 fn main() -> anyhow::Result<()> {
     let helper = AdlxHelper::new()?;
@@ -137,7 +137,7 @@ fn main() -> anyhow::Result<()> {
 ## Code example
 
 ```rust,no_run
-use adlx::{gpu::Gpu1, helper::AdlxHelper, interface::Interface};
+use adlx_lite::{gpu::Gpu1, helper::AdlxHelper, interface::Interface};
 use anyhow::Result;
 
 fn main() -> Result<()> {

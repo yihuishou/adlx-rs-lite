@@ -1,8 +1,8 @@
 //! 穷举父对象，寻找 4 个「漏网」接口的真实入口
 
-use adlx::ffi;
-use adlx::helper::AdlxHelper;
-use adlx::interface::{Interface, InterfaceImpl};
+use adlx_lite::ffi;
+use adlx_lite::helper::AdlxHelper;
+use adlx_lite::interface::{Interface, InterfaceImpl};
 
 macro_rules! scan {
     ($parent:expr, $label:literal, [$($iid:literal),* $(,)?]) => {{

@@ -1,6 +1,6 @@
-//! Open the ADLX library, retrieve [`adlx::adlx::system::System`], and call a simple function on it
+//! Open the ADLX library, retrieve [`adlx_lite::system::System`], and call a simple function on it
 
-use adlx::{helper::AdlxHelper, Gpu1, Gpu2, Interface};
+use adlx_lite::{helper::AdlxHelper, Gpu1, Gpu2, Interface};
 use anyhow::Result;
 
 fn main() -> Result<()> {
